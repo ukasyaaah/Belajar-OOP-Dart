@@ -1,15 +1,20 @@
 // Kode : Class
 class Person {
 // >>> Membuat Field / Properties
-  String? address; // Nullable / bisa null
   String name = 'ari'; // Wajib di isi nilainya
-  final String country = 'indonesia'; // Gabisa dirubah datanya
+  String? address; // Nullable / bisa null
+  final String country = 'Indonesia'; // Gabisa dirubah datanya
 
 // >>> Membuat Method / Function
   void kenalan(String paraName) {
     print(
         'Hello $paraName, Namaku $name, Aku dari $address, Sekarang lagi di $country');
   }
+}
+
+// Extension Method ( Gunakan extension & on)
+extension SayGoodBye on Person {
+  void sayGoodBye(String paraName) => print('Good bye $paraName, from $name');
 }
 
 void main() {
@@ -32,4 +37,7 @@ void main() {
 
 // Memanggil Method di class Person
   person1.kenalan('Zufar');
+
+// Memanggil Extension
+  person1.sayGoodBye('Andre');
 }
