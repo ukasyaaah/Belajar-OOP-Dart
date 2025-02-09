@@ -4,10 +4,9 @@ class Person {
 
 // Constructor
   Person(String namaKamu, String alamatKamu) {
-    name = namaKamu;
+    name = namaKamu; // name = name akan error, menyebabkan variabel shadowing
     address = alamatKamu;
     print('Hallo $name Kamu dari $address');
-
   }
 }
 
@@ -16,4 +15,4 @@ void main() {
 
   print(person.name); // Hani
   print(person.address); // Semarang
-}
+} 
