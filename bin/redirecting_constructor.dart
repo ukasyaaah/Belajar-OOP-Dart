@@ -1,5 +1,5 @@
 class Device {
-  String phone = 'X200';
+  String phone = '16 Pro';
   String pad = '';
 
   // Default Constructor
