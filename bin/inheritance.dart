@@ -1,19 +1,19 @@
 class Manager {
-  String? managerName;
+  String? name;
 
   void sapa(String name) {
-    print('Haii staff $name, Saya ${managerName}');
+    print('Haii staff $name, Saya Manager ${this.name}');
   }
 }
 
 class VicePresident extends Manager {}
 
 void main() {
-  var staff = Manager();
-  staff.managerName = 'Ukhasyah';
-  staff.sapa('Budi');
+  var manager = Manager();
+  manager.name = 'Ukhasyah';
+  manager.sapa('Budi');
 
-  var staff2 = VicePresident();
-  staff2.managerName = 'Hani';
-  staff2.sapa('Adi');
+  var vp = VicePresident();
+  vp.name = 'Hani';
+  vp.sapa('Adi');
 }
