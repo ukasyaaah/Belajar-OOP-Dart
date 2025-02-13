@@ -24,4 +24,5 @@ void main() {
 
 // HAnya bisa bikin object turunannya.
   var city = City('Semarang');
+  print(city.name);
 }
