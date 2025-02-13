@@ -1,6 +1,6 @@
-import 'data/rectangle.dart';
-import 'data/get_set_Account.dart';
-import 'data/lokasi.dart';
+import 'getter_setter/rectangle.dart';
+import 'getter_setter/get_set_Account.dart';
+import 'getter_setter/lokasi.dart';
 
 // Mengakses Getter Setter seperti fields
 void main() {
@@ -23,9 +23,11 @@ void main() {
   lokasi.iniNegara = 'Indonesia'; // Setter
   print(lokasi.iniNegara); // Getter
 
-
   lokasi.iniKota = 'Semarang';
   print(lokasi.iniKota);
 
-  print('Kota ${lokasi.iniKota} terletak di negara ${lokasi.iniNegara}');
+  lokasi.iniProvinsi = 'Jawa Tengah';
+  print(lokasi.iniProvinsi);
+
+  print('Kota ${lokasi.iniKota} terletak di provinsi ${lokasi.iniProvinsi}, negara ${lokasi.iniNegara}');
 }
