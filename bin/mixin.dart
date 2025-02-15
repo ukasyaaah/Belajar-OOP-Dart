@@ -26,15 +26,11 @@ class Video {
     print('Play $name');
   }
 
-  void stop(){
+  void stop() {
     print('Stop $name');
   }
 }
 
 // SETELAH MIXIN
 
-class Audio with Playable, Stoppable{
-
-}
-
-
+class Audio with Playable, Stoppable {}
