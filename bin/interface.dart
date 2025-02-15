@@ -33,7 +33,7 @@ class Avanza implements Car, Brand {
   @override
   void brand(String brand) => print('Brand nya adalah $brand');
 
-  @override
+
   void warna(String warnaa) => print('Warnanya adalah $warnaa');
 }
 
