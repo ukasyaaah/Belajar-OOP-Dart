@@ -3,6 +3,31 @@ class Mobil {
   String? warna;
 
   Mobil(this.merk, this.warna);
+
+//Override Equals Method
+  @override
+  bool operator ==(Object other) {
+    if (other is Mobil) {
+      if (merk != other.merk) {
+        return false;
+      } else if (warna != other.warna) {
+        return false;
+      } else {
+        return true;
+      }
+    } else {
+      return false;
+    }
+  }
+
+// Override HashCode
+  @override
+// Cara ini 
+  // int get hashCode => Object.hash(merk, warna);
+
+// Atau Cara Lain
+
+  int get hashCode => warna.hashCode ^ merk.hashCode;
 }
 
 void main() {
